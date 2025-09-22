@@ -8,4 +8,4 @@ Each Leetcode challenge is contained within it's own subdirectory, consisting of
 
 - Instruction .md file
 - Solution file
-
+- Main file

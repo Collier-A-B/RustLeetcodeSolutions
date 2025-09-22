@@ -5,6 +5,9 @@ edition = "2024"
 description = "My Solution to 'Two Sum' Leetcode challenge"
 readme = "README.md"
 repository = "https://github.com/Collier-A-B/RustLeetcodeSolutions.git"
-default-run = ""
+publish = false
+
+[build]
+target-dir = "target"
 
 [dependencies]
