@@ -4,38 +4,38 @@ mod solution;
 fn main() {
     println!("\nRunning Tests For TwoSum!!!");
 
+    // Initialize Test Case 0
+    let test0_input: Vec<i32> = vec![2,7,11,15];
+    let test0_expected: Vec<i32> = vec![0,1];
+    let test0_target: i32 = 9;
+
     // Initialize Test Case 1
-    let test1_input: Vec<i32> = vec![2,7,11,15];
-    let test1_expected: Vec<i32> = vec![0,1];
-    let test1_target: i32 = 9;
+    let test1_input: Vec<i32> = vec![3,2,4];
+    let test1_expected: Vec<i32> = vec![1,2];
+    let test1_target: i32 = 6;
 
     // Initialize Test Case 2
-    let test2_input: Vec<i32> = vec![3,2,4];
-    let test2_expected: Vec<i32> = vec![1,2];
+    let test2_input: Vec<i32> = vec![3,3];
+    let test2_expected: Vec<i32> = vec![0,1];
     let test2_target: i32 = 6;
-
-    // Initialize Test Case 3
-    let test3_input: Vec<i32> = vec![3,3];
-    let test3_expected: Vec<i32> = vec![0,1];
-    let test3_target: i32 = 6;
 
     // Add all "test#_input" vectors to "inputs" vector
     let mut inputs: Vec<Vec<i32>> = Vec::new();
+    inputs.push(test0_input);       // Test 0
     inputs.push(test1_input);       // Test 1
     inputs.push(test2_input);       // Test 2
-    inputs.push(test3_input);       // Test 3
 
     // Add all "test#_target" vectors to targets vector
     let mut targets: Vec<i32> = Vec::new();
+    targets.push(test0_target);     // Test 0
     targets.push(test1_target);     // Test 1
     targets.push(test2_target);     // Test 2
-    targets.push(test3_target);     // Test 3
 
     // Add all "test#_expected" vectors to "expected_outputs" vector
     let mut expected_outputs: Vec<Vec<i32>> = Vec::new();
+    expected_outputs.push(test0_expected);      // Test 0
     expected_outputs.push(test1_expected);      // Test 1
     expected_outputs.push(test2_expected);      // Test 2
-    expected_outputs.push(test3_expected);      // Test 3
 
 
     if (inputs.len() != expected_outputs.len()) || 
