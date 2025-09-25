@@ -1,6 +1,6 @@
 # Two Sum Solution
 
-This package contains my solution to the "Two Sum" Leet Code challenge
+This directory contains my solution to the "Two Sum" Leet Code challenge
 
 - <https://leetcode.com/problems/two-sum/>
 
